@@ -1,0 +1,17 @@
+{
+  "name": "uib-accordion",
+  "version": "1.0.0",
+  "description": "Learn how to work with Angular Bootstrap Accordion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
