@@ -9,15 +9,22 @@ var path = {
     sass: ['app/css/**/*.scss', 'app/css/**/*.sass'],
     js: ['app/js/**/*.js'],
     html: ['app/**/*.html'],
+    // Delete all but not dist folder
     bootstrapDistOnly: [
         'app/bower_components/bootstrap/**/*', 
-        '!app/bower_components/bootstrap/dist/**/*',
+        '!app/bower_components/bootstrap/dist',
+        '!app/bower_components/bootstrap/dist/**'       
+    ],
+    jqueryDistOnly: [
+        'app/bower_components/jquery/**/*', 
+        '!app/bower_components/jquery/dist',              
+        '!app/bower_components/jquery/dist/**'              
     ]
 };
 
 gulp.task('clean', function (callback){
-    console.log('Clean vendor src:' + path.bootstrapDistOnly + ' ...');
-    del(path.bootstrapDistOnly, callback);
+    console.log('Clean vendor\'s src...');
+    del(path.bootstrapDistOnly.concat(path.jqueryDistOnly), callback);
 });
 
 // Compile sass into CSS & auto-inject into browsers

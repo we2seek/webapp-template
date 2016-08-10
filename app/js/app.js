@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('myApp', []);
+var app = angular.module('myApp', ['ui.bootstrap']);
 
 app.controller('MainController', ['$scope', '$http', function($scope, $http){
     $scope.welcome_header = 'Kitty says Angular is works...';
@@ -11,5 +11,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http){
             console.log(resp.data);
             $scope.items = resp.data;
          });
+
+    $scope.dt = new Date();
 
 }]);

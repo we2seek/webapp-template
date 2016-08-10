@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <title>Hello from kitty!</title>
     <link rel="icon" href="favicon.gif" type="image/gif" sizes="16x16">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="./bower_components/angular/angular-csp.css">
+    <link rel="stylesheet" href="./bower_components/angular-bootstrap/ui-bootstrap-csp.css">
+    <link rel="stylesheet" href="./css/main.css">
 
 </head>
 <body ng-controller="MainController">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-md-offset-3">
+            <div class="col-sm-8 col-sm-offset-2">
                 <h2 ng-bind="welcome_header">Hello, Kitty!</h2>
                 <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Переписали о, рыбными, даже дал повстречался злых правилами прямо которое единственное. Переписали, рекламных, страну! Власти на берегу lorem, грустный за оксмокс пустился правилами собрал переулка великий снова, не бросил, точках города если, жаренные меня свое даль подпоясал? Ведущими себя большой лучше.</p>
                 <p>Несколько, всемогущая на берегу грустный что послушавшись рыбными гор города бросил! Выйти большой он курсивных буквенных, коварный, над силуэт запятой по всей она предупреждал семантика заманивший однажды раз жизни своих рукописи семь родного, приставка. Знаках имени что, города ты за использовало щеке продолжил, безопасную дорогу. Безорфографичный вопрос решила коварный послушавшись дорогу дороге.</p>
@@ -19,14 +23,23 @@
                 </ul>
                 <div ng-if="!items.length">
                     <p>No items found...</p>
-                </div>            
+                </div>   
+
+                <div style="display:inline-block; min-height:290px;">
+                    <div uib-datepicker ng-model="dt" class="well well-sm" datepicker-options="options"></div>
+                </div>   
+
             </div>
         </div>
     </div>
 
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/angular/angular.min.js.map"></script>
+    <script src="./bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="./bower_components/angular-animate/angular-animate.min.js.map"></script>
+    <script src="./bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="./bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 
-
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
