@@ -3,7 +3,7 @@
 var app = angular.module('myApp', ['ui.bootstrap']);
 
 app.controller('MainController', ['$scope', '$http', function($scope, $http){
-    $scope.welcome_header = 'Kitty says Angular is works...';
+    $scope.welcome_header = 'Charley says Angular is works...';
     $scope.items = [];
 
     $http.get('js/items.json')
