@@ -1,10 +1,14 @@
 {
   "name": "uib-accordion",
-  "version": "1.0.0",
-  "description": "Learn how to work with Angular Bootstrap Accordion",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Default webapp",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "bower install",
+    "prestart": "npm install",
+    "start": "gulp"
   },
   "author": "",
   "license": "ISC",
