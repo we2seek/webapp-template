@@ -1,5 +1,5 @@
 {
-  "name": "uib-accordion",
+  "name": "webapp-quickstart",
   "private": true,
   "version": "0.0.1",
   "description": "Default webapp",
@@ -10,13 +10,19 @@
     "prestart": "npm install",
     "start": "gulp"
   },
-  "author": "",
+  "author": "Vitaliy Timchenko",
   "license": "ISC",
   "devDependencies": {
     "bower": "^1.7.9",
     "browser-sync": "^2.14.0",
-    "del": "^2.2.1",
+    "del": "^2.2.2",
     "gulp": "^3.9.1",
-    "gulp-sass": "^2.3.2"
+    "gulp-clean-css": "^3.0.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-header": "^1.8.8",
+    "gulp-less": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.1"
   }
 }

@@ -1,7 +1,6 @@
-### webapp-template
-My "The wheel reinvention" in basic angular webapp. At the moment this is a ready-for-use angular app.
+### webapp-quickstart
+Ready-for-use developer's website template w/ already configured angular, angular-bootstrap and bootstrap.
+I hope this save some time for someone who want to start develop site from scratch...
 
 ### Installation
-1. After cloning this repo: `npm install`
-2. Then `bower install`
-3. And finally run app with `gulp` command
+After cloning this repo just type `npm start` and enjoy the magic!

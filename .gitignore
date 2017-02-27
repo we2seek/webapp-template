@@ -1,4 +1,6 @@
 node_modules
-app/bower_components
+bower_components
+app/vendor
+app/css
+app/js/scripts.min.js
 *~
-**/items.json

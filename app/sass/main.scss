@@ -1,0 +1,17 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext';
+@import 'variables.scss';
+
+body {
+    font: $font-stack;
+    color: $font-color;
+    background-color: $body-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
+    color: $accent-color;
+}
